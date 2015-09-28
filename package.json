@@ -1,6 +1,6 @@
 {
   "name": "js-stringify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Stringify an object so it can be safely inlined in JavaScript code",
   "keywords": [],
   "dependencies": {},
