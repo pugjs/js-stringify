@@ -21,6 +21,8 @@ assert(stringify('foo') === '"foo"');
 assert(stringify('foo\u2028bar\u2029baz') === '"foo\\u2028bar\\u2029baz"');
 assert(stringify(new Date('2014-12-19T03:42:00.000Z')) === 'new Date("2014-12-19T03:42:00.000Z")');
 assert(stringify({foo: 'bar'}) === '{"foo":"bar"}');
+assert(stringify({foo: 'bar'}, 4) === '{\n    "foo": "bar"\n}');
+assert(stringify({foo: 'bar'}, '\t') === '{\n\t"foo": "bar"\n}');
 assert(stringify(undefined) === 'undefined');
 assert(stringify(null) === 'null');
 assert(
